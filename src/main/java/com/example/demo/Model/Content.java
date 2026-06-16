@@ -12,5 +12,4 @@ public record Content(
         LocalDateTime updatedAt,
         String url
 ) {
-
 }

@@ -1,0 +1,38 @@
+
+
+### Get All Content
+GET http://localhost:8080/api/content/all
+
+
+### Create Content
+POST http://localhost:8080/api/content/create
+Content-Type: application/json
+
+{
+  "title": "My Spring Boot API Test",
+  "description": "Testing CRUD with MySQL",
+  "status": "published",
+  "contentType": "blog",
+  "dateCreated": "2026-06-15T14:10:00",
+  "dateUpdated": null,
+  "url": "https://google.com"
+}
+
+
+### Update Content
+PUT http://localhost:8080/api/content/1
+Content-Type: application/json
+
+{
+  "title": "Updated Spring Boot API Test",
+  "description": "Updated content from REST Client",
+  "status": "published",
+  "contentType": "article",
+  "dateCreated": "2026-06-15T14:10:00",
+  "dateUpdated": "2026-06-15T14:30:00",
+  "url": "https://google.com"
+}
+
+
+### Delete Content
+DELETE http://localhost:8080/api/content/1
